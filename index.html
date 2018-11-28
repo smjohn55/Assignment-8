@@ -25,15 +25,16 @@
 
     }
     body.selected #addButton{
-      display:none;
+      display:block;
+
     }
     body #backButton{
-      animation: slideInLeft 1s;
+      animation: slideOutLeft 1s;
       animation-fill-mode: both;
     }
     body.selected #backButton{
       display:block;
-      animation: slideOutLeft 1s;
+      animation: slideInLeft 1s;
       animation-fill-mode: both;
     }
     }
@@ -45,7 +46,8 @@
     }
     body.selected #clockWrapper{
       display: block;
-
+      animation: slideInLeft 1s;
+      animation-fill-mode: both;
     }
 
     body #tzList{
