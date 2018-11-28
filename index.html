@@ -21,12 +21,15 @@
     }
     #clockWrapper{
         width: 100%;
+
     }
     body.selected #addButton{
       display:none;
     }
     body.selected #backButton{
       display:block;
+      animation: slideOutLeft .2s;
+      animation-fill-mode: both;
     }
     body.selected #tzList{
       display: none;
@@ -164,8 +167,9 @@
     height: 200px;
   }
   button.box.active{
-    background: gold;
+    background: AliceBlue;
   }
+
   </style>
   <script>
   function closeClicked()
@@ -181,7 +185,10 @@
     $("#addButton").fadeOut();
   }
   function backClicked(){
-    $("body").removeClass("selected");
+    //for (var
+    //document.getElementById("#clockWrapper").style.transform="translate(-100% , 0% )";
+    //$("#clockWrapper").stop().animate({"margin-left": "+100%"}, 1000);
+    //$("body").removeClass("selected");
     setTimeout('$("#tzList button.box").removeClass("active")', 1000);
   }
   function start(){
