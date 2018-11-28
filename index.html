@@ -69,6 +69,7 @@
     }
     #clockWrapper{
         width: calc(100% - 260px);
+        overflow: scroll;
     }
   }
   #backButton{
@@ -198,9 +199,6 @@
     $("#addButton").fadeOut();
   }
   function backClicked(){
-    //for (var
-    //document.getElementById("#clockWrapper").style.transform="translate(-100% , 0% )";
-    //$("#clockWrapper").stop().animate({"margin-left": "+100%"}, 1000);
     $("body").removeClass("selected");
     setTimeout('$("#tzList button.box").removeClass("active")', 1000);
   }
