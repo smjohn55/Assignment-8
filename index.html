@@ -27,14 +27,17 @@
     body.selected #addButton{
       display:none;
     }
-    body.selected #backButton{
-      display:block;
+    body #backButton{
       animation: slideOutLeft 1s;
       animation-fill-mode: both;
     }
+    body.selected #backButton{
+      display:block;
+
+    }
     body.selected #tzList{
       display: none;
-      animation: slideInLeft 1s;
+      animation: slideOutLeft 1s;
       animation-fill-mode: both;
 
     }
